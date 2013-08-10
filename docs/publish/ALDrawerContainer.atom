@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>https://github.com/plasticcube/DrawerContainer/docs/publish/ALDrawerContainer.atom/20130810094000</id>
+    <title type="text">ALDrawerContainer Documentation</title>
+    <rights>Copyright © 2013 plasticcube. All rights reserved.</rights>
+    <link rel="self" href="https://github.com/plasticcube/DrawerContainer/docs/publish/ALDrawerContainer.atom"></link>
+    <docset:publisherName>plasticcube</docset:publisherName>
+    <docset:publisherID>com.plasticcube.documentation</docset:publisherID>
+    <updated>2013-08-10T09:40:00-04:00</updated>
+    <entry>
+        <id>tag:github.com,2013-08-10:com.plasticcube.ALDrawerContainer/1.0.0</id>
+        <title type="text">ALDrawerContainer Documentation</title>
+        <updated>2013-08-10T09:40:00-04:00</updated>
+        <content type="text">ALDrawerContainer Documentation (v1.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="https://github.com/plasticcube/DrawerContainer/docs/publish/com.plasticcube.ALDrawerContainer-1.0.xar" length="36792"></link>
+        <docset:identifier>com.plasticcube.ALDrawerContainer</docset:identifier>
+        <docset:version>1.0.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>

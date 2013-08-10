@@ -1,0 +1,832 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ALDrawerViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ALDrawerContainer </a></h1>
+				<a id="developerHome" href="../index.html">plasticcube</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ALDrawerViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/centerViewController">&nbsp;&nbsp;&nbsp;&nbsp;centerViewController</option>
+	
+	<option value="//api/name/leftViewController">&nbsp;&nbsp;&nbsp;&nbsp;leftViewController</option>
+	
+	<option value="//api/name/openPadding">&nbsp;&nbsp;&nbsp;&nbsp;openPadding</option>
+	
+	<option value="//api/name/rightViewController">&nbsp;&nbsp;&nbsp;&nbsp;rightViewController</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/displayCenterViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- displayCenterViewController:</option>
+	
+	<option value="//api/name/displayCenterViewController:close:">&nbsp;&nbsp;&nbsp;&nbsp;- displayCenterViewController:close:</option>
+	
+	<option value="//api/name/initWithLeftViewController:rightViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithLeftViewController:rightViewController:</option>
+	
+	<option value="//api/name/setLeftNavigationDrawerButton:">&nbsp;&nbsp;&nbsp;&nbsp;- setLeftNavigationDrawerButton:</option>
+	
+	<option value="//api/name/setRightNavigationDrawerButton:">&nbsp;&nbsp;&nbsp;&nbsp;- setRightNavigationDrawerButton:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerViewController">centerViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leftViewController">leftViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openPadding">openPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rightViewController">rightViewController</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayCenterViewController:">displayCenterViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayCenterViewController:close:">displayCenterViewController:close:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithLeftViewController:rightViewController:">initWithLeftViewController:rightViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLeftNavigationDrawerButton:">setLeftNavigationDrawerButton:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRightNavigationDrawerButton:">setRightNavigationDrawerButton:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ALDrawerViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ALDrawerViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UIGestureRecognizerDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ALDrawerViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the main display in the draw menu  &ndash; this class handles displaying
+your left and right drawer view controllers and settings the center one.</p>
+
+<p>This class is a parent container view controller that displays its child view
+controllers using the Container View Controller mechanism.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rightViewController">&nbsp;&nbsp;rightViewController</a></code>
+		<span class="tooltip"><pre><code>Get/Set the view controller for the right drawer.
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leftViewController">&nbsp;&nbsp;leftViewController</a></code>
+		<span class="tooltip"><pre><code>Get/Set the view controller for the left drawer.
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centerViewController">&nbsp;&nbsp;centerViewController</a></code>
+		<span class="tooltip"><pre><code>Get the current center view controller.
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openPadding">&nbsp;&nbsp;openPadding</a></code>
+		<span class="tooltip"><pre><code>Get/Set the left/right margin that the drawer will open to.
+Default 60.f.
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithLeftViewController:rightViewController:">&ndash;&nbsp;initWithLeftViewController:rightViewController:</a></code>
+		<span class="tooltip"><pre><code>Initializes the the ALDrawerViewController.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/displayCenterViewController:">&ndash;&nbsp;displayCenterViewController:</a></code>
+		<span class="tooltip"><pre><code>Sets the center content area view controller to the child view controller passed in.
+If the drawer is open it is closed automatically.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/displayCenterViewController:close:">&ndash;&nbsp;displayCenterViewController:close:</a></code>
+		<span class="tooltip"><pre><code>Sets the center content area view controller to the child view controller passed in.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		<span class="tooltip"><pre><code>Resets the main view to the center closing the drawer.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRightNavigationDrawerButton:">&ndash;&nbsp;setRightNavigationDrawerButton:</a></code>
+		<span class="tooltip"><pre><code>Set the right bar button. Set to nil to hide.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLeftNavigationDrawerButton:">&ndash;&nbsp;setLeftNavigationDrawerButton:</a></code>
+		<span class="tooltip"><pre><code>Set the left bar button. Set to nil to hide.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/centerViewController" title="centerViewController"></a>
+	<h3 class="subsubtitle method-title">centerViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Get the current center view controller.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIViewController *centerViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leftViewController" title="leftViewController"></a>
+	<h3 class="subsubtitle method-title">leftViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Get/Set the view controller for the left drawer.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) UIViewController *leftViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openPadding" title="openPadding"></a>
+	<h3 class="subsubtitle method-title">openPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Get/Set the left/right margin that the drawer will open to.
+Default 60.f.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float openPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rightViewController" title="rightViewController"></a>
+	<h3 class="subsubtitle method-title">rightViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Get/Set the view controller for the right drawer.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) UIViewController *rightViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Resets the main view to the center closing the drawer.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/displayCenterViewController:" title="displayCenterViewController:"></a>
+	<h3 class="subsubtitle method-title">displayCenterViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Sets the center content area view controller to the child view controller passed in.
+If the drawer is open it is closed automatically.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)displayCenterViewController:(UIViewController *)<em>centerViewControllerController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>centerViewControllerController</em></dt>
+			<dd><p>The ViewController to be displayed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/displayCenterViewController:close:" title="displayCenterViewController:close:"></a>
+	<h3 class="subsubtitle method-title">displayCenterViewController:close:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Sets the center content area view controller to the child view controller passed in.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)displayCenterViewController:(UIViewController *)<em>centerViewControllerController</em> close:(BOOL)<em>close</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>centerViewControllerController</em></dt>
+			<dd><p>The ViewController to be displayed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>close</em></dt>
+			<dd><p>Close the drawer after settting the centerViewControllerController.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithLeftViewController:rightViewController:" title="initWithLeftViewController:rightViewController:"></a>
+	<h3 class="subsubtitle method-title">initWithLeftViewController:rightViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Initializes the the ALDrawerViewController.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithLeftViewController:(UIViewController *)<em>leftViewController</em> rightViewController:(UIViewController *)<em>rightViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>leftViewController</em></dt>
+			<dd><p>The left view controller. Set to nil for no left hand drawer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rightViewController</em></dt>
+			<dd><p>The right view controller. Set to nil for no right hand drawer.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLeftNavigationDrawerButton:" title="setLeftNavigationDrawerButton:"></a>
+	<h3 class="subsubtitle method-title">setLeftNavigationDrawerButton:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Set the left bar button. Set to nil to hide.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLeftNavigationDrawerButton:(UIButton *)<em>button</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>button</em></dt>
+			<dd><p>New left button to show.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRightNavigationDrawerButton:" title="setRightNavigationDrawerButton:"></a>
+	<h3 class="subsubtitle method-title">setRightNavigationDrawerButton:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Set the right bar button. Set to nil to hide.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setRightNavigationDrawerButton:(UIButton *)<em>button</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>button</em></dt>
+			<dd><p>New right button to show.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALDrawerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 plasticcube. All rights reserved. (Last updated: 2013-08-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

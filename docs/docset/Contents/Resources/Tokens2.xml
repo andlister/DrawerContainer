@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ALDrawerViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ALDrawerViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html">A Protocol designed to be (optionally) added to the main center child view controllers.
+Overriding the methods in your child view controller will provide callbacks for
+the drawer state.</Abstract>
+			<DeclaredIn>ALDrawerViewControllerDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALDrawerViewControllerDelegate/viewWillAppearDrawer</TokenIdentifier>
+			<Abstract type="html">    This view controller is about to appear in the center.</Abstract>
+			<DeclaredIn>ALDrawerViewControllerDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewWillAppearDrawer</Declaration>
+			
+			
+			<Anchor>//api/name/viewWillAppearDrawer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALDrawerViewControllerDelegate/viewWillDisappearDrawer</TokenIdentifier>
+			<Abstract type="html">    This view controller is about to disappear in the center.</Abstract>
+			<DeclaredIn>ALDrawerViewControllerDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewWillDisappearDrawer</Declaration>
+			
+			
+			<Anchor>//api/name/viewWillDisappearDrawer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALDrawerViewControllerDelegate/viewDidAppearDrawer</TokenIdentifier>
+			<Abstract type="html">    This view controller did appear in the center.</Abstract>
+			<DeclaredIn>ALDrawerViewControllerDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewDidAppearDrawer</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppearDrawer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALDrawerViewControllerDelegate/viewDidDisappearDrawer</TokenIdentifier>
+			<Abstract type="html">    This view controller did disappear in the center.</Abstract>
+			<DeclaredIn>ALDrawerViewControllerDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewDidDisappearDrawer</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidDisappearDrawer</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ALDrawerViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ALDrawerViewController</TokenIdentifier>
+			<Abstract type="html">This is the main display in the draw menu  - this class handles displaying
+your left and right drawer view controllers and settings the center one.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/setRightViewController:</TokenIdentifier>
+			<Abstract type="html">    Get/Set the view controller for the right drawer.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIViewController *rightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/rightViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDrawerViewController/rightViewController</TokenIdentifier>
+			<Abstract type="html">    Get/Set the view controller for the right drawer.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIViewController *rightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/rightViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/setLeftViewController:</TokenIdentifier>
+			<Abstract type="html">    Get/Set the view controller for the left drawer.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIViewController *leftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/leftViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDrawerViewController/leftViewController</TokenIdentifier>
+			<Abstract type="html">    Get/Set the view controller for the left drawer.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) UIViewController *leftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/leftViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/setCenterViewController:</TokenIdentifier>
+			<Abstract type="html">    Get the current center view controller.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIViewController *centerViewController</Declaration>
+			
+			
+			<Anchor>//api/name/centerViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDrawerViewController/centerViewController</TokenIdentifier>
+			<Abstract type="html">    Get the current center view controller.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIViewController *centerViewController</Declaration>
+			
+			
+			<Anchor>//api/name/centerViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/setOpenPadding:</TokenIdentifier>
+			<Abstract type="html">    Get/Set the left/right margin that the drawer will open to.
+    Default 60.f.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) float openPadding</Declaration>
+			
+			
+			<Anchor>//api/name/openPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDrawerViewController/openPadding</TokenIdentifier>
+			<Abstract type="html">    Get/Set the left/right margin that the drawer will open to.
+    Default 60.f.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) float openPadding</Declaration>
+			
+			
+			<Anchor>//api/name/openPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/initWithLeftViewController:rightViewController:</TokenIdentifier>
+			<Abstract type="html">    Initializes the the ALDrawerViewController.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithLeftViewController:(UIViewController *)leftViewController rightViewController:(UIViewController *)rightViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>leftViewController</Name>
+					<Abstract type="html">The left view controller. Set to nil for no left hand drawer. </Abstract>
+				</Parameter><Parameter>
+					<Name>rightViewController</Name>
+					<Abstract type="html">The right view controller. Set to nil for no right hand drawer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithLeftViewController:rightViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/displayCenterViewController:</TokenIdentifier>
+			<Abstract type="html">    Sets the center content area view controller to the child view controller passed in.
+    If the drawer is open it is closed automatically.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)displayCenterViewController:(UIViewController *)centerViewControllerController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>centerViewControllerController</Name>
+					<Abstract type="html">The ViewController to be displayed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayCenterViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/displayCenterViewController:close:</TokenIdentifier>
+			<Abstract type="html">    Sets the center content area view controller to the child view controller passed in.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)displayCenterViewController:(UIViewController *)centerViewControllerController close:(BOOL)close</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>centerViewControllerController</Name>
+					<Abstract type="html">The ViewController to be displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>close</Name>
+					<Abstract type="html">Close the drawer after settting the centerViewControllerController.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayCenterViewController:close:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/close</TokenIdentifier>
+			<Abstract type="html">    Resets the main view to the center closing the drawer.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/setRightNavigationDrawerButton:</TokenIdentifier>
+			<Abstract type="html">    Set the right bar button. Set to nil to hide.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setRightNavigationDrawerButton:(UIButton *)button</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>button</Name>
+					<Abstract type="html">New right button to show.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRightNavigationDrawerButton:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDrawerViewController/setLeftNavigationDrawerButton:</TokenIdentifier>
+			<Abstract type="html">    Set the left bar button. Set to nil to hide.</Abstract>
+			<DeclaredIn>ALDrawerViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLeftNavigationDrawerButton:(UIButton *)button</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>button</Name>
+					<Abstract type="html">New left button to show.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLeftNavigationDrawerButton:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
