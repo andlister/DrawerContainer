@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/andy/Library/Developer/Shared/Documentation/DocSets/com.plasticcube.ALDrawerContainer.docset
-Time: 2013-08-10 13:40:00 +0000
