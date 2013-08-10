@@ -69,9 +69,16 @@
  */
 - (void)close;
 
-- (void)hideRightBarButton;
-- (void)hideLeftBarButton;
+/**
+    Set the right bar button. Set to nil to hide.
+    @param button New right button to show.
+ */
 - (void)setRightNavigationDrawerButton:(UIButton *)button;
+
+/**
+    Set the left bar button. Set to nil to hide.
+    @param button New left button to show.
+ */
 - (void)setLeftNavigationDrawerButton:(UIButton *)button;
 
 @end

@@ -370,39 +370,37 @@ typedef enum {
 }
 
 
-- (void)hideRightBarButton
-{
-    self.navigationItem.rightBarButtonItem = nil;
-}
-
-   
-- (void)hideLeftBarButton
-{
-    self.navigationItem.leftBarButtonItem = nil;
-}
-
-
 - (void)setRightNavigationDrawerButton:(UIButton *)button
 {
-    // If target and actions have not been set on the button, set them to the drawer slide default
-    NSArray *actions = [button actionsForTarget:self forControlEvent:UIControlEventTouchUpInside];
-    if ([actions count] == 0) {
-        [button addTarget:self action:@selector(toggleLeftSlide) forControlEvents:UIControlEventTouchUpInside];
+    if (button) {
+        // If target and actions have not been set on the button, set them to the drawer slide default
+        NSArray *actions = [button actionsForTarget:self forControlEvent:UIControlEventTouchUpInside];
+        if ([actions count] == 0) {
+            [button addTarget:self action:@selector(toggleLeftSlide) forControlEvents:UIControlEventTouchUpInside];
+        }
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     }
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    else {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
 }
 
 
 - (void)setLeftNavigationDrawerButton:(UIButton *)button
 {
-    // If target and actions have not been set on the button, set them to the drawer slide default
-    NSArray *actions = [button actionsForTarget:self forControlEvent:UIControlEventTouchUpInside];
-    if ([actions count] == 0) {
-        [button addTarget:self action:@selector(toggleRightSlide) forControlEvents:UIControlEventTouchUpInside];
-    }
+    if (button) {
+        // If target and actions have not been set on the button, set them to the drawer slide default
+        NSArray *actions = [button actionsForTarget:self forControlEvent:UIControlEventTouchUpInside];
+        if ([actions count] == 0) {
+            [button addTarget:self action:@selector(toggleRightSlide) forControlEvents:UIControlEventTouchUpInside];
+        }
 
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    }
+    else {
+        self.navigationItem.leftBarButtonItem = nil;
+    }
 }
 
 
