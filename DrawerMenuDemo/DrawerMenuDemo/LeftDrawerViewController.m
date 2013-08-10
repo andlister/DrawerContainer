@@ -63,7 +63,7 @@ static NSString *kCellId = @"MenuCell";
         self.secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController_iPad" bundle:nil];
     }
 
-    DemoAppDelegate.containerViewController.centerViewController = self.firstViewController;
+    [DemoAppDelegate.containerViewController displayCenterViewController:self.firstViewController];
     
     [self.tableView reloadData];
 }
@@ -136,10 +136,10 @@ static NSString *kCellId = @"MenuCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([self.menu[indexPath.row] isEqualToString:@"First"]) {
-        DemoAppDelegate.containerViewController.centerViewController = self.firstViewController;
+        [DemoAppDelegate.containerViewController displayCenterViewController:self.firstViewController];
     }
     else if ([self.menu[indexPath.row] isEqualToString:@"Second"]) {
-        DemoAppDelegate.containerViewController.centerViewController = self.secondViewController;
+        [DemoAppDelegate.containerViewController displayCenterViewController:self.secondViewController];
     }
 }
 

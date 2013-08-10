@@ -21,29 +21,48 @@
 /**
     Get/Set the view controller for the right drawer.
  */
-@property (nonatomic) UIViewController *rightViewController;
+@property (nonatomic, readwrite) UIViewController   *rightViewController;
 
 /**
     Get/Set the view controller for the left drawer.
  */
-@property (nonatomic) UIViewController *leftViewController;
+@property (nonatomic, readwrite) UIViewController   *leftViewController;
 
 /**
-    Get/Set the current center view controller.
-    Setting this will replace the existing view controller with a new one.
-    The drawer will close automatically.
+    Get the current center view controller.
  */
-@property (nonatomic) UIViewController *centerViewController;
+@property (nonatomic, readonly) UIViewController    *centerViewController;
 
 
 /**
-    Get/Set the position to which the the drawer will open to.
-    Default 60.f
+    Get/Set the left/right margin that the drawer will open to.
+    Default 60.f.
  */
-@property (nonatomic) float            openPadding;
+@property (nonatomic) float                         openPadding;
 
 
+/** 
+    Initializes the the ALDrawerViewController.
+    @param leftViewController The left view controller. Set to nil for no left hand drawer. 
+    @param rightViewController The right view controller. Set to nil for no right hand drawer.
+ */
 - (id)initWithLeftViewController:(UIViewController *)leftViewController rightViewController:(UIViewController *)rightViewController;
+
+
+/**
+    Sets the center content area view controller to the child view controller passed in.
+    If the drawer is open it is closed automatically.
+    @param centerViewControllerController The ViewController to be displayed.
+ */
+- (void)displayCenterViewController:(UIViewController *)centerViewControllerController;
+
+
+/**
+    Sets the center content area view controller to the child view controller passed in.
+    @param centerViewControllerController The ViewController to be displayed.
+    @param close Close the drawer after settting the centerViewControllerController.
+ */
+- (void)displayCenterViewController:(UIViewController *)centerViewControllerController close:(BOOL)close;
 
 /**
     Resets the main view to the center closing the drawer.

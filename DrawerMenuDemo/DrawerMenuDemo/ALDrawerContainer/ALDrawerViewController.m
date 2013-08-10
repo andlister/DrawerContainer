@@ -16,9 +16,10 @@ typedef enum {
 
 @interface ALDrawerViewController ()
 
-@property (nonatomic) UITapGestureRecognizer      *tapCloseDrawerGesture;
-@property (nonatomic) UIPanGestureRecognizer      *panGesture;
-@property (nonatomic) ContainerPosition           currentPosition;
+@property (nonatomic, readwrite) UIViewController       *centerViewController;
+@property (nonatomic, readwrite) UITapGestureRecognizer *tapCloseDrawerGesture;
+@property (nonatomic, readwrite) UIPanGestureRecognizer *panGesture;
+@property (nonatomic, readwrite) ContainerPosition      currentPosition;
 
 @end
 
@@ -33,6 +34,9 @@ typedef enum {
         
         self.openPadding = 60.f; // default paddding width when drawer is open
         
+        
+        // Default buttons. You can change the buttons using the
+        // setRightNavigationDrawerButton/setLeftNavigationDrawerButton methods.
         UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Left"
                                                                           style:UIBarButtonItemStylePlain
                                                                          target:self
@@ -85,10 +89,13 @@ typedef enum {
 }
 
 
-/**
-    Changes the main displaying view controller to the child view controller passed in.
- */
 - (void)displayCenterViewController:(UIViewController *)centerViewControllerController
+{
+    [self displayCenterViewController:centerViewControllerController close:YES];
+}
+
+
+- (void)displayCenterViewController:(UIViewController *)centerViewControllerController close:(BOOL)close
 {
     if (centerViewControllerController != self.centerViewController) {
         [self.centerViewController willMoveToParentViewController:nil];
@@ -99,7 +106,7 @@ typedef enum {
         [self.view addSubview:centerViewControllerController.view];
         [centerViewControllerController didMoveToParentViewController:self];
         
-        _centerViewController = centerViewControllerController;
+        self.centerViewController = centerViewControllerController;
     }
 
     [self closeDrawer];
@@ -121,12 +128,6 @@ typedef enum {
     if (rightViewController == nil) {
         self.navigationItem.rightBarButtonItem = nil;
     }
-}
-
-
-- (void)setCenterViewController:(UIViewController *)centerViewController
-{
-    [self displayCenterViewController:centerViewController];
 }
 
 
